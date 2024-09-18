@@ -6,28 +6,18 @@
         
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../websitetutorial2/javastuff.js" defer></script>
+        <script src="javastuff.js" defer></script>
     </head>
 
  
     <body>
         
-      
+
    <div class="my-picture" id="page1">
 
-        <div class="overlay-text">
-            <p><i> Hey, I'm </i></p>
-            <h1> Thomas Looi </h1>
-    
-      
-      
-            <button onclick="location.href='#page2'"> </button>
-    </div>
-    </div>
+     <!-- NAVIGATION MENU -->
 
-    <!-- NAVIGATION MENU -->
-
-    <div class="Nav-menu" >
+     <div class="Nav-menu" >
 
         <h1> <a href="#page1">Home</a> </h1>
         <h1> <a href="#page2">About</a> </h1>
@@ -38,15 +28,27 @@
 
     </div>
 
+        <div class="overlay-text">
+            <p><i> Hey, I'm</i></p>
+            <h1> David Pang </h1>
+    
+      
+      
+            <button onclick="location.href='#page2'"> Discover More </button> 
+            
+    </div>
+    </div>
+
+
     
         <!-- ABOUT SECTION -->
     
-        <div class="About-me-Headers">
+        <div class="About-me-Headers" id="page2">
             <h1>
                 A Little Bit About Me
             </h1>
         </div>
-    <div class="AboutMe" id="page2">
+    <div class="AboutMe" >
         
         
         <div class="infolist">
@@ -95,8 +97,7 @@
         <div class="Skills">
 
             <h1> Technical Skills </h1>
-            
-            <p> Programming Languages
+<p> Programming Languages
                 •	C, C++, Java, JavaScript, Python, Scala, MIPS
                 </p>
                 <p>
@@ -106,17 +107,24 @@
                   <p>
                 Web Development Tools
                 •	HTML, CSS, JavaScript, React
-
-               
                 </p>
-
+            <div class="technicals">
+                <img src="myimages/Technical/c++.png" alt="c++ icon">
+                <img src="myimages/Technical/C.png" alt="C icon">
+                <img src="myimages/Technical/javascript.png" alt="javascript icon">
+                <img src="myimages/Technical/python.png" alt="c++ icon">
+                <img src="myimages/Technical/java.png" alt="C icon">
+                <img src="myimages/Technical/mips.png" alt="javascript icon">
+                <img src="myimages/Technical/scala.png" alt="javascript icon">
+            </div>
 
         </div>
 
         <div class="about-icons">
-            <a href="#page1"><img src="myimages/Logos/githubicon.png" ></a>
-            <a href="#page1"><img src="myimages/Logos/githubicon.png" ></a>
-            <a href="#page1"><img src="myimages/Logos/githubicon.png" ></a>
+            <a href="https://github.com/dpang1124" target=”_blank”><img src="myimages/Logos/githubicon.png" id="github"></a>
+            <a href="https://www.linkedin.com/in/david-pang-0a5113251/" target=”_blank”><img src="myimages/Logos/linkedin.png" id="linkedin"></a>
+            <a href="mailto:dpang1124@gmail.com" target=”_blank”><img src="myimages/Logos/finalemail.png" id="change-email"></a>
+            
             
         </div>
 
@@ -132,11 +140,11 @@
         </h1>
 
         <p> University at Buffalo</p>
-        <img src="myimages/Schools/UB-image.jpg" alt="A picture of the University at Buffalo">
+        <img src="myimages/Schools/UB-image.jpg" alt="A picture of the University at Buffalo" id="school1">
         <p> Queens College</p>
-        <img src="myimages/Schools/queens-college.jpg" alt="A picture of Queens College">
+        <img src="myimages/Schools/queens-college.jpg" alt="A picture of Queens College" id="school2">
         <p> Benjamin N. Cardozo Highschool</p>
-        <img src="myimages/Schools/Cardozo.jpg" alt="A picture of Cardozo Highschool">
+        <img src="myimages/Schools/Cardozo.jpg" alt="A picture of Cardozo Highschool" id="school3">
 
        
    
@@ -163,31 +171,47 @@
             <li>Integrated with development tools such as VScode, 
                 React, Javascript, HTML, CSS, MySQL, and Dockers.</li>
         </ul>
-   
 
+        <p class="placeholderexp">Lorem ipsum odor amet, consectetuer adipiscing elit. Praesent et vestibulum egestas; diam phasellus curabitur fusce fermentum nisi. Metus vitae viverra penatibus ridiculus integer a. Faucibus potenti mi lectus vivamus fermentum. Cubilia senectus curabitur auctor morbi erat aenean ex orci. Ipsum tempor dui, ad orci eu interdum. Imperdiet venenatis elit neque nam donec. Sapien enim justo efficitur hendrerit dictum nascetur. Dui consequat ornare mauris urna purus sem torquent.
+
+            Arcu sollicitudin duis finibus mauris tristique interdum. Hac tincidunt convallis ut pulvinar habitant vulputate. Nisi rhoncus amet curabitur senectus placerat nam. Diam felis justo nisl varius vitae maximus. Odio ex hac nisi natoque id mi. Tortor venenatis luctus nostra nulla nisl id. Porttitor lectus pharetra ullamcorper class nascetur nostra. Rhoncus tempor donec orci massa aliquam. Maximus ante taciti litora, pretium erat bibendum sagittis aliquam. Dis pulvinar ex fringilla fames nascetur taciti.
+            
+            Ut aptent elementum praesent nibh felis montes. Vulputate bibendum sodales enim lacus mattis. Magnis pulvinar molestie vulputate; amet dignissim etiam proin ornare. Viverra luctus egestas ornare lobortis blandit finibus torquent varius. Maximus dictum nisl velit suscipit quam nascetur porttitor sodales congue. Cursus magna sit dictum ipsum non porta fringilla condimentum urna. Consequat adipiscing scelerisque leo id phasellus eleifend eget senectus accumsan. Gravida quam feugiat cursus ac elit conubia sem. Convallis risus augue montes risus efficitur nec interdum elit habitasse. Ridiculus velit congue quisque porttitor nulla neque.
+            
+            Dignissim egestas lectus dui taciti dapibus non laoreet nisl. Donec gravida dis himenaeos feugiat maecenas in aenean? Quam odio convallis lorem rutrum elementum; ultrices maecenas sociosqu. Diam facilisis senectus hendrerit tempus sem interdum efficitur. Finibus massa sed ultrices quis volutpat magna? Tellus egestas neque sagittis libero velit sagittis maecenas odio. Suspendisse facilisi finibus hac auctor tristique. Tellus volutpat himenaeos placerat habitant volutpat. Inceptos dictumst inceptos nam viverra; curabitur dolor iaculis quisque.
+            
+            Pellentesque magna rhoncus litora integer dignissim, quam orci. Duis mattis augue magnis congue aptent cras. Condimentum ex tellus quisque pulvinar sollicitudin conubia lacus integer. Vivamus nisl phasellus natoque; faucibus lobortis ornare. Accumsan consequat dis erat a; congue elementum efficitur. Pretium feugiat hendrerit lacus nisl torquent. Elementum ridiculus bibendum et suscipit ultricies. Eleifend primis risus primis facilisi vestibulum sociosqu volutpat.
+            
+            </p>
 
     </div>
 
     <!-- PROJECTS SECTION -->
 
     <div class="Projects" id="page5">
+
+        <div class="image-blur">
+
+        </div>
+       
     <h1>
         Check out some of my Projects
     </h1>
 
+    
     <div class="icons">
 
         <a href="#page1"><img src="myimages/Projects/Data.png"></a>
         <a href="#page1"><img src="myimages/Projects/Enemy.png"></a>
         <a href="#page1"><img src="myimages/Projects/Instant.png"></a>
-        <a href="#page1"><img src="myimages/Projects/Conway.png"></a>
+        <a href="#page1" id="Conway"><img src="myimages/Projects/Conway.png" ></a>
         <a href="#page1"><img src="myimages/Projects/Short.png"></a>
         <a href="#page1"><img src="myimages/Projects/Personal.png"></a>
         <a href="#page1"><img src="myimages/Projects/Queen.png"></a>
         <a href="#page1"><img src="myimages/Projects/Self.png"></a>
         
         
-    
+    <!--
 
     <p> Cash Register System Development 								         September 2021	
         •	Constructed a Point-of-Sale backend system for a modern cash register that enables virtual transactions.
@@ -217,7 +241,7 @@
     <p> My Personal Website					        			        May 2023
         DEVELOPED THIS WITHOUT A FRAMEWORK AS MY FIRST WEBSITE TO HELP LEARN MORE HTML AND CSS ON MY OWN
         </p>
-  
+  -->
     </div>
 
 
@@ -248,6 +272,6 @@
     </footer>
     </body>
 
-
+    
 
 </html>

@@ -1,18 +1,23 @@
+
 body{
     background-color: rgb(39, 35, 35);
     margin: auto;
     padding: auto;
 }
 
+
+
 /* FIRST PAGE PICTURE */ 
 
+
 .my-picture{
+    background-attachment: fixed;
     text-align: center;
     background-color: brown;
     border:none;
     overflow: hidden;
     position: relative;
-    background-image: url(myimages/Other/fatasian.png);
+    background-image: url(myimages/Other/extendedresumepic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,14 +27,25 @@ body{
 
 .overlay-text h1{
     font-size: 80px;
-    
+}
+
+.overlay-text button{
+    width: 150px;
+    height: 100x;
+    font-size: 15px;
+}
+
+.overlay-text button:hover{
+    filter: invert(1);
+    transition: .3s;
 }
 
 
+/*hiding arrow button for now
 
 .overlay-text button{
     position: absolute;
-    top: 600%;
+    top: 300%;
     left: 50%;
     transform: translate(-50%, -50%); 
     width: 50px; 
@@ -53,19 +69,16 @@ body{
 
 .overlay-text button:hover {
     background-color: rgb(206, 206, 206); 
-}
+} */
 
 .overlay-text p, .overlay-text h1{
     margin: 0px;
     padding: 0px;
 }
 
-
-
-
 .overlay-text{
   position: absolute;
-  top: 10%; 
+  top: 45%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   background-color: none;
@@ -73,11 +86,17 @@ body{
   padding: 10px 20px; 
   font-size: 20px; 
   text-align: center;
+
+  padding-left: 1000px;
+  width: 1000px;
+  font-family: 'Lato', sans-serif;
+  
 }
 
 /*About Me*/
 
 .About-me-Headers{
+    padding-top: 50px;
     display:block;
     color: white;
     text-align: center;
@@ -91,7 +110,11 @@ body{
     height: fit-content;
     justify-content: space-evenly;
     align-content: space-around;
-    
+}
+
+.technicals img{
+    width: 100px;
+    height: 100%;
 }
 
 
@@ -138,10 +161,9 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-   
-    
-    
 }
+
+
 
 /*find out how to make background of icons transparent*/
 .about-icons a img{
@@ -150,20 +172,20 @@ body{
     text-decoration: none;
     width: 40px;
     height: 40px;
-    
+    transition: .6s;
+    padding: 30px;
 }
 
 .about-icons a img:hover{
-    filter: invert(1); /* This inverts the colors, turning black to white and white to black */
-    transition: 0.6s;
-    
+    filter: invert(1);
+    width: 50px;
+    height: 50px;
 }
-
-
 
 /*Education*/
 
 .Education{
+    padding-top: 75px;
     background-color: rgba(224, 224, 224, 0.925);
     text-align: center;
     height: fit-content;
@@ -173,44 +195,115 @@ body{
 .Education img{
     width: 700px;
     height: 400px;
-    
 }
 
+#school1{
+    position: relative;
+    left: 30%;
+}
+
+#school2{
+    position: relative;
+    left: 30%;
+}
+
+#school3{
+    position: relative;
+    left: 30%;
+}
 
 
 /*Experience*/
 
 .Experience{
+    padding-top: 50px;
     color: white;
     text-align: center;
     height: 1000px;
 }
 
+
+.placeholderexp{
+    text-align: center;
+    
+}
 /*Projects*/
 
+/* MAKE THE CONTENT ON THE PAGE ABSOLUTE NOT THE FUCKING BACKGROUND YOU DUMBASS DO IT LIKE YOUR HOME PAGE */
 .Projects h1{
     font-size: 30px;
+    color: white;
 }
 .Projects{
+    padding-top: 50px;
     text-align: center;
-    background-color: rgba(224, 224, 224, 0.925);
-    height: fit-content;
+    background-color: transparent;
+    height: 100vh;
+    background-image: url(myimages/Other/blurred-technology.jpg);
+    background-attachment: fixed;
 }
 
-.icons{
+/*
+.image-blur{
+    position: absolute;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 1);
+    background-attachment: fixed;
+    background-image: url('myimages/Other/background-realistic-abstract-technology-particle_23-2148431735.avif');
+  width: 100%;
+  height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(3px);
+}
+    */
+
+/*
+.blurr {
+    position: absolute;
+    top: 0;
+    left: 0;
+   height: 500px;
+   width: 500px;
+    background-image: url('myimages/Other/background-realistic-abstract-technology-particle_23-2148431735.avif'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); 
+    z-index: -1; 
+  } */
+
+
+ 
+.icons{ 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+    justify-content: center;
+    gap: 26px;
+}
+
+.icons a{
+    height: 300px;
+    width: 300px;
+    border-radius: 20%;
+    box-sizing: border-box;
+    margin: 30px;
 }
 
 .icons a img{
     border-radius: 20%;
     box-shadow: 4px 4px 10px black;
-    height: 300px;
-    width: 300px;
-    margin: 50px;
+    height: 100%;
+    width: 100%;
+    transition: 0.6s;
 }
+
+.icons a img:hover{
+    cursor:cell;
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+
 
 
 
@@ -279,24 +372,25 @@ footer{
 
 /*Navigation Menu*/
 .Nav-menu{
-position: sticky;
-top: 0;
+top: 0px;
 
 color: white;
-display:flex;
-flex-direction: row;
-justify-content: center;
+display: flex;
+justify-content: center; /*no longer works when position is fixed*/
 gap: 50px;
-padding-left: 100px;
-padding-right: 100px;
+left: 50%;
+top: 25px;
+transform: translate(-50%, -50%);
 font-size: 10px;
-background-color: rgb(49, 48, 48);
+background-color: rgb(49, 48, 48, .3);
+width: 100%;
+position: fixed;
+z-index: 2;
 }
 
 html {
     scroll-behavior: smooth;
   }
-
 
 .Nav-menu a{
     color:white;
