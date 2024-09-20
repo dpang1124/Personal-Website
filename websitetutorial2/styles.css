@@ -232,14 +232,28 @@ body{
     width: 800px;
     height: fit-content;
     text-align: left;
+   flex: 1;
+  
 }
 
 .education-divider{
-    height: 250px;
-    width: 2px;
-    background-color: black;
+    height: 150px;
+    width: 1px;
+    background-color: rgb(63, 62, 62);
+    margin-top: 25px;
+    margin-right: 20px;
 }
 
+.school-courses{
+flex: 1;
+}
+
+.school-courses p{
+    padding: 20px;
+    font-size: 17px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .school-text p{
     padding-left: 30px;
@@ -277,16 +291,55 @@ body{
 .Experience{
     padding-top: 50px;
     color: white;
-    text-align: center;
-    height: 1000px;
+    height: fit-content;
     background-color: rgb(39, 35, 35);
+    margin-bottom: 100px;
 }
 
+.Jobs{
+    border: 1px white solid;
+    padding: 30px;
+    width: 1000px;
+    height: 300px;
+}
 
-.placeholderexp{
+.Jobs p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.experience-separator{
+    background-color: white;
+    width: 1px;
+    height: 50px;
+}
+.Experience h1{
     text-align: center;
     
 }
+
+.experience-text{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.experience-position{
+    font-style: bold;
+    font-size: 30px;
+}
+
+.experience-date{
+    color: rgb(194, 194, 194);
+    font-style: italic;
+    margin-top: -20px;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+
 /*Projects*/
 
 /* MAKE THE CONTENT ON THE PAGE ABSOLUTE NOT THE FUCKING BACKGROUND YOU DUMBASS DO IT LIKE YOUR HOME PAGE */
@@ -294,7 +347,9 @@ body{
     font-size: 30px;
     color: white;
 }
+
 .Projects{
+    cursor: url(myimages/Other/galacticpointer.cur), auto;
     padding-top: 50px;
     text-align: center;
     background-color: transparent;
@@ -302,7 +357,93 @@ body{
     background-image: url(myimages/Other/blurred-technology.jpg);
     background-attachment: fixed;
     background-color: blue;
+    padding-bottom: 50px;
 }
+
+.Projects * {
+    cursor: url(myimages/Other/galacticpointer.cur), auto;
+}
+
+.icon-span{
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20%;
+    width: inherit;
+    height: inherit;
+    z-index: 1;
+    opacity: 0;
+    transition: .3s;
+}
+
+.icon-span p{
+    color: white;
+    padding-top: 70px;
+    font-style: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.icon-span:hover{
+    opacity: 1;
+    transition: .3s;
+    
+}
+ 
+.icons{ 
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 26px;
+}
+
+.icons a{
+  
+    height: 300px;
+    width: 300px;
+    border-radius: 20%;
+    box-sizing: border-box;
+    margin: 30px;
+}
+
+.icons a img{
+    border-radius: 20%;
+    box-shadow: 4px 4px 10px black;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    z-index: 0;
+    margin-bottom: -304px;
+}
+
+.icons a img:hover{
+    cursor:cell;
+    transition: 0.6s;
+}
+
+.background-dark{
+    display: none;
+  opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 2;
+    top: 0px;
+    position: fixed;
+    transition: 0.3s ease;
+}
+
+.project-details-container{
+width: 600px;
+height: 600px;
+background-color: rgb(219, 219, 219);
+position: relative;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+
 
 /*
 .image-blur{
@@ -332,37 +473,6 @@ body{
     filter: blur(8px); 
     z-index: -1; 
   } */
-
-
- 
-.icons{ 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 26px;
-}
-
-.icons a{
-    height: 300px;
-    width: 300px;
-    border-radius: 20%;
-    box-sizing: border-box;
-    margin: 30px;
-}
-
-.icons a img{
-    border-radius: 20%;
-    box-shadow: 4px 4px 10px black;
-    width: 100%;
-    height: 100%;
-    transition: 0.6s;
-}
-
-.icons a img:hover{
-    cursor:cell;
-    transform: scale(1.1);
-    transition: 0.6s;
-}
 
 
 
