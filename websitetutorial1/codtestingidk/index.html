@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blurred Background Example</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background-realistic-abstract-technology-particle_23-2148431735.avif'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Blur effect for the background image */
+    z-index: -1; /* Place background behind other content */
+  }
+
+  .content {
+    position: relative;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Blur effect on the content area */
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better readability */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+</style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="content">
+    <p>Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> Your content goes here <br> </p>
+  </div>
+</body>
+</html>
