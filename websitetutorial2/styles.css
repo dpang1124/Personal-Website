@@ -356,7 +356,7 @@ ul li{
     height: fit-content;
     background-image: url(myimages/Other/blurred-technology.jpg);
     background-attachment: fixed;
-    background-color: blue;
+    background-color: white;
     padding-bottom: 50px;
 }
 
@@ -387,11 +387,9 @@ ul li{
 .icon-span:hover{
     opacity: 1;
     transition: .3s;
-    
 }
  
 .icons{ 
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -417,11 +415,6 @@ ul li{
     margin-bottom: -304px;
 }
 
-.icons a img:hover{
-    cursor:cell;
-    transition: 0.6s;
-}
-
 .background-dark{
     display: none;
   opacity: 0;
@@ -437,13 +430,79 @@ ul li{
 .project-details-container{
 width: 600px;
 height: 600px;
-background-color: rgb(219, 219, 219);
+background-color: rgba(255, 255, 255, 0);
 position: relative;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
+border-radius: 10px;
 }
 
+
+.project-details-container button{
+    position:relative;
+    top: 82%;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    z-index: 2;
+    font-size: 25px;
+    transition: .2s;
+}
+
+.project-details-container button:hover{
+    color: rgb(231, 77, 77);
+    transition: .2s;
+}
+
+.popup-text{
+    font-size: 20px;
+    color: black;
+    z-index: 1;
+}
+
+.popup-text div{
+    opacity: 0;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    z-index: 1;
+}
+
+.popup-text div h1{
+    color: black;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.popup-text div p{
+    margin-top: 280px;
+    background-color: rgb(255, 255, 255, .95);
+    border-radius: 10px;
+    font-size: 25px;
+    width: 500px;
+    height: 250px;
+}
+
+.popup-text div a{
+    color: black;
+    font-size: 25px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255, 0.95);
+    transition: .2s;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+    transition: .2s;
+}
+
+.popup-text div a:hover{
+    color: rgb(33, 33, 255);
+    transition: .2s;
+}
 
 /*
 .image-blur{
@@ -482,53 +541,76 @@ transform: translate(-50%, -50%);
 .Contact{
     background-color: rgb(39, 35, 35);
     color: white;
-    height: 600px;
+    height: fit-content;
 }
 
-.Contact form{
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    gap: 20px;
+.Contact h1{
+    text-align: center;
 }
 
-
-.contact-message{
-    font-size: large;
-    height: 200px;
-    width: 20%;
-    line-height: 200px; /*wtf this isn't working fix it later*/
-}
-
-
-
-.contact-rowflexitems{
+.contact-flexbox{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-right: 20px;
-    width: 25%;
-    
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
 }
 
+.contact-message::placeholder{
+    
+    line-height: normal;
+      }
+  
+
 .contact-name{
-    font-size: large;
+    width: 237px;
     height: 22px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-email{
-    font-size: large;
+    width: 237px;
     height: 22px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-subject{
-    font-size: large;
-    width: 20%;
-    height: 25px;
+    width: 500px;
+    height: 22px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.Contact button{
+.contact-message{
+    width: 500px;
+    height: 300px;
+    padding-top: 10px; /* Adjust as needed */
+    box-sizing: border-box; /* Ensures padding is included in height */
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-flexbox input::-webkit-input-placeholder {
+    line-height: normal; /* Adjust as necessary */
+}
+
+.contact-flexbox button{
     width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    transition: .3s;
+}
+
+.contact-flexbox button:hover{
+    background-color: rgb(212, 212, 212);
+    transition: .3s;
+    cursor: pointer;
 }
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>David Pang's Websites</title>
+        <title>David Pang's Personal Websites</title>
         <link rel="stylesheet" href="styles.css">
         
         <meta charset="UTF-8">
@@ -196,6 +196,8 @@
             <div class="schools">
   <img src="myimages/Schools/Cardozo.jpg" alt="A picture of Cardozo Highschool" class="schools">
   </div>
+
+  <div class="education-description-box">
             <div class="school-text">
                 <p class="school-name"> Benjamin N. Cardozo Highschool</p>
                 <p class="school-degree-major"> Highschool Degree </p>
@@ -204,6 +206,7 @@
                 </div>
             </div>
             </div>
+        </div>
     
 
     <!-- EXPERIENCE SECTION -->
@@ -260,54 +263,101 @@
     
     <div class="icons">
 <a id="data-button"> <img src="myimages/Projects/Data.png"> <span class="icon-span"> <p> ➕ </p> </span> </a> 
-        <a href="#page1"><img src="myimages/Projects/Enemy.png"> <span class="icon-span"> <p> ➕ </p> </span> </a>
-        <a href="#page1"><img src="myimages/Projects/Instant.png"> <span class="icon-span"> <p> ➕ </p> </span> </a>
-        <a href="#page1" id="Conway"><img src="myimages/Projects/Conway.png" > <span class="icon-span"> <p> ➕ </p> </span> </a>
-        <a href="#page1"><img src="myimages/Projects/Short.png"> <span class="icon-span"> <p> ➕ </p></span> </a>
-        <a href="#page1"><img src="myimages/Projects/Personal.png"> <span class="icon-span"> <p> ➕ </p> </span> </a>
-        <a href="#page1"><img src="myimages/Projects/Queen.png"> <span class="icon-span"> <p> ➕ </p> </span> </a>
-        <a href="#page1"><img src="myimages/Projects/Self.png"> <span class="icon-span"> <p> ➕ </p> </span> </a>
+        <a id="data-button2"><img src="myimages/Projects/Enemy.png"> <span class="icon-span"> <p> ➕ </p> </span> </a>
+        <a id="data-button3"><img src="myimages/Projects/Instant.png"> <span class="icon-span"> <p> ➕ </p> </span> </a>
+        <a id="data-button4"><img src="myimages/Projects/Conway.png" > <span class="icon-span"> <p> ➕ </p> </span> </a>
+        <a id="data-button5"><img src="myimages/Projects/Short.png"> <span class="icon-span"> <p> ➕ </p></span> </a>
+        <a id="data-button6"><img src="myimages/Projects/Personal.png"> <span class="icon-span"> <p> ➕ </p> </span> </a>
+        <a id="data-button7"><img src="myimages/Projects/Queen.png"> <span class="icon-span"> <p> ➕ </p> </span> </a>
+        <a id="data-button8"><img src="myimages/Projects/Self.png"> <span class="icon-span"> <p> ➕ </p> </span> </a>
     </div>
 
+    <!-- Popup Divs-->
     <div class="background-dark">
     <div class="project-details-container">
-        <button id="data-close"> X </button>
-        <h1> Details </h1>
-        <a href="https://github.com/dpang1124/Data-Linking-and-Anonymization-for-Public-Records" target="_blank"> More Details </a>
+        <button id="data-close"> Close </button>
+        
+        <div class="popup-text">
+
+        <div id="data"> 
+          <!--  <img src="myimages/Projects/Data.png" alt="picture of my data anonymization icon">
+            <h1> Data Linking and Anonymization for Public Records September 2022 </h1> -->
+            <p> 
+                A Multi data parser that identifies and anonymizes public data that can link and expose personal info,
+                 leveraging data-parsing functions and data structures including graphs and key-value HashMaps. <br> <br>
+                -Developed through IntelliJ IDE via the Java language and its open source libraries such as test-runner.</p>
+            <a href="https://github.com/dpang1124/Data-Linking-and-Anonymization-for-Public-Records" target="_blank"> More Details </a> 
+        </div>
+
+    <div id="enemy"> 
+        <p>
+             Primitive enemy artificial intelligence in a grid-based game following tick dependent frames,
+            utilizing Graph Data Structures and OOP principles such as state-pattern, classes, and inheritance. <br> <br>
+            -Assembled using IntelliJ IDE through Scala language, grids, parsing protocols, and physics simulation.</p>
+            <a href="https://github.com/dpang1124/Enemy-AI" target="_blank"> More Details </a> 
+    </div>
+
+    <div id="instant"> 
+        
+        <p>
+            
+Developed an Instant Messaging System, generating a live server with seamless connection between users, able to encode and decode 
+thousands of data packets using pointer arithmetic, padding, and casting.
+
+<br> <br> -Integrated using C in a Virtual Machine via Xpra, with resources and extensions provided via the C library.
+        </p>
+        <a href="https://github.com/dpang1124/Instant-Messenger-Development" target="_blank"> More Details </a> 
+    </div>
+
+    <div id="conway"> 
+      
+        <p>
+            
+             Created a reiteration of Conway’s game of life, a cellular automaton displayed on a 2D grid 
+            Using frame dependent ticks and 3-dimensional pointer arrays producing an automaton animation.
+            <br> <br> -Utilized a VM Machine, Github VC System, Xpra, and GNU-Make to ensure code version and functionality.
+        </p> 
+        <a href="https://github.com/dpang1124/Conway-s-Game-of-Life-Simulation" target="_blank"> More Details </a> 
+    </div>
+
+    <div id="short"> 
+       
+        <p> Takes in and parses graph and explores it finding the shortest path between any 2 locations <br> <br>
+        Implemented in Java</p>
+        <a href="https://github.com/dpang1124/Shortest-Path-Graph-Exploration" target="_blank"> More Details </a> 
+    </div>
+
+    <div id="personal"> 
+    
+        <p> This Webpage You Are Currently Viewing! <br> <br> I developed this without the use of any frameworks to develop my HTML, CSS, and Javascript skills. </p>
+        <a href="https://github.com/dpang1124/Data-Linking-and-Anonymization-for-Public-Records" target="_blank"> More Details </a> 
+    </div>
+
+    <div id="queen"> 
+      
+        <p>
+            Developed an algorithm solving the infamous 8 queens problem in all 92 solutions!
+            <br> <br> Implement in C++ in one of my early courses at Queens College (Object-Oriented Programming in C++).
+    </p> 
+    <a href="https://github.com/dpang1124/8-Queens-Problem" target="_blank"> More Details </a> 
+</div>
+
+    <div id="self"> 
+   
+        <p> 
+            Constructed a Point-of-Sale backend system for a modern cash register that enables virtual transactions,
+            utilizing Object Oriented principles such as inheritance, polymorphism, or state-pattern.
+
+            <br> <br>
+            -Developed through IntelliJ IDE with the Scala language, extensions, and libraries.</p>
+            <a href="https://github.com/dpang1124/Cash-Register-System-Development" target="_blank"> More Details </a> 
+    </div>
+
+</div>
+
+
     </div>
 </div>
- <!--
-
-    <p> Cash Register System Development 								         September 2021	
-        •	Constructed a Point-of-Sale backend system for a modern cash register that enables virtual transactions.
-        •	Utilized Object Oriented principles such as inheritance, polymorphism, or state-pattern.
-        •	Developed through IntelliJ IDE with the Scala language, extensions, and libraries. 
-        </p>
-    <p> Conway's Game of Life Simulation 								          December 2021
-        •	Created a reiteration of Conway’s game of life, a cellular automaton displayed on a 2D grid.
-        •	Used frame dependent ticks and 3-dimensional pointer arrays producing an automaton animation.
-        •	Utilized a VM Machine, Github VC System, Xpra, and GNU-Make to ensure code version and functionality.
-        </p>
-    <p> Data Linking and Anonymization for Public Records 					         September 2022
-        •	Built a Multi data parser that identifies and anonymizes public data that can link and expose personal info.
-        •	Leveraged data-parsing functions and data structures including graphs and key-value HashMaps.
-        •	Developed through IntelliJ IDE via the Java language and its open source libraries such as test-runner
-        </p>
-    <p> Enemy AI 											               January 2023
-        •	Implemented primitive enemy artificial intelligence in a grid-based game following tick dependent frames.
-        •	Utilized Graph Data Structures and OOP principles such as state-pattern, classes, and inheritance.
-        •	Assembled using IntelliJ IDE through Scala language, grids, parsing protocols, and physics simulation.
-        </p>
-    <p> Instant Messenger Development						        			        May 2023
-        •	Developed an Instant Messaging System, generating a live server with seamless connection between users.
-        •	Encoded and decoded thousands of data packets using pointer arithmetic, padding, and casting.
-        •	Integrated using C in a Virtual Machine via Xpra, with resources and extensions provided via the C library.
-        </p>
-    <p> My Personal Website					        			        May 2023
-        DEVELOPED THIS WITHOUT A FRAMEWORK AS MY FIRST WEBSITE TO HELP LEARN MORE HTML AND CSS ON MY OWN
-        </p>
-  -->
-
 
 
 </div>
@@ -315,18 +365,21 @@
     <!-- CONTACTS SECTION -->
    
     <div class="Contact" id="page6">
-       
-        <form>
-            
-            <label for="message"> <h1>Send me a message!</h1>  </label>
-            <div class="contact-rowflex">
+       <h1>I'd Love to Connect With You</h1> 
+
+    
+
+        <form class="contact-box">
+            <div class="contact-flexbox">
             <input placeholder="Name" class="contact-name">
             <input type="email" placeholder="Email" class="contact-email">
-        </div>
             <input placeholder="Subject" class="contact-subject">
-            <input type="text" name="message" placeholder="Send me an email" class="contact-message">
-            <button> Send </button>
+            <input type="text" placeholder="Send me a message" class="contact-message">
+            <button href="#page2"> Send </button>
+            </div>
         </form>
+
+
     </div> 
 
 
