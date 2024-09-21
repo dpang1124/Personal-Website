@@ -104,6 +104,15 @@ body{
 
 /*About Me*/
 
+.resume a{
+    font-size: larger;
+    width: fit-content;
+    border: 1px white solid;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
 .About-me-Headers{
     padding-top: 50px;
     display:block;
@@ -157,6 +166,7 @@ body{
 }
 
 .Skills{
+    margin-top: -150px;
     color: white;
     text-align: center;
     width: 500px;
@@ -170,9 +180,13 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    
 }
 
-
+.about-icons a{
+    border-radius: 50%;
+    margin: 30px;
+}
 
 /*find out how to make background of icons transparent*/
 .about-icons a img{
@@ -182,7 +196,7 @@ body{
     width: 40px;
     height: 40px;
     transition: .6s;
-    padding: 30px;
+
 }
 
 .about-icons a img:hover{
@@ -592,10 +606,14 @@ border-radius: 10px;
     box-sizing: border-box; /* Ensures padding is included in height */
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: normal;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-.contact-flexbox input::-webkit-input-placeholder {
-    line-height: normal; /* Adjust as necessary */
+.contact-message::placeholder{
+   line-height: normal;
 }
 
 .contact-flexbox button{
@@ -613,6 +631,30 @@ border-radius: 10px;
     cursor: pointer;
 }
 
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.contact-info img{
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+    transition: .4s;
+}
+
+.contact-info img:hover{
+transform: scale(1.2);
+transition: .4s;
+}
+
+
 
 /*Footer*/
 footer{
@@ -620,6 +662,7 @@ footer{
     text-align: center;
     font-size: 10px;
     color: white;
+    height: 25px;
 }
 
 /*Navigation Menu*/
@@ -660,3 +703,13 @@ html {
 
 
  /*color: rgba(255, 255, 255, 0.719);*/
+
+ #linkedin{
+    transform: scale(1.15); 
+    transform-origin: center; 
+ }
+ 
+ #linkedin:hover{
+    transform: scale(1.5);
+    transition: .4s;
+ }
