@@ -1,60 +1,66 @@
-window.addEventListener('scroll', function() {
-    const parallax = document.querySelector('.my-picture');
-    const scrollPosition = window.pageYOffset;
-    // Adjust the multiplier (0.5) to control the speed of the scroll effect just putting this here for later
-    parallax.style.backgroundPositionY = -scrollPosition * 0.5 + 'px';
-  }
-);
+  window.addEventListener('scroll', function() {
+      const parallax = document.querySelector('.my-picture');
+      const scrollPosition = window.pageYOffset;
+      // Adjust the multiplier (0.5) to control the speed of the scroll effect putting this here as a reminder.
+      parallax.style.backgroundPositionY = -scrollPosition * 0.5 + 'px';
+    }
+  );
 
-  const button = document.getElementById('data-button1');
-  const popup = document.getElementsByClassName('background-dark')[0];
-  const close = document.getElementById('data-close');
-  const popupcontent = document.getElementsByClassName('project-details-container')[0];
- 
-  let texts = [document.getElementById('data'), document.getElementById('enemy'), document.getElementById('instant'), document.getElementById('conway'),
-               document.getElementById('short'), document.getElementById('personal'), document.getElementById('queen'), document.getElementById('self'), ];
+    const button = document.getElementById('data-button1');
+    const popup = document.getElementsByClassName('background-dark')[0];
+    const close = document.getElementById('data-close');
+    const popupcontent = document.getElementsByClassName('project-details-container')[0];
+  
+    let texts = 
+    [document.getElementById('data'), document.getElementById('enemy'), document.getElementById('instant'), document.getElementById('conway'),
+    document.getElementById('short'), document.getElementById('personal'), document.getElementById('queen'), document.getElementById('self'), ];
 
   
-
-  // add transition opening
   window.addEventListener('click', function(event){
-    if (event.target.closest('#data-close')) {
+
+    if (event.target.closest('#data-close')){
+
       popup.style.opacity = '0';
+
       setTimeout(() => {
         popup.style.display = 'none'; 
-      }, 300); //300 miliseconds
+      }, 300); 
+
       for(var i=0; i<texts.length; i++){
         texts[i].style.opacity='0';
         texts[i].style.display='none';
       }
+
       popupcontent.style.backgroundImage='none';
+
     } 
   }
-);
+  );
 
+  window.addEventListener('click', function(event){
 
-window.addEventListener('click', function(event){
-  if (event.target.classList.contains('background-dark')) {
-    popup.style.opacity = '0';
+    if (event.target.classList.contains('background-dark')) {
 
-    setTimeout(() => {
-      popup.style.display = 'none'; 
-  }, 300); 
+      popup.style.opacity = '0';
 
-  for(var i=0; i<texts.length; i++){
-    texts[i].style.opacity='0';
-    texts[i].style.display='none';
+      setTimeout(() => {
+        popup.style.display = 'none'; 
+      }, 300); 
+
+      for(var i=0; i<texts.length; i++){
+        texts[i].style.opacity='0';
+        texts[i].style.display='none';
+      }
+    
+    popupcontent.style.backgroundImage='none';
+
+    } 
   }
-  
-  popupcontent.style.backgroundImage='none';
+  ); 
 
-  } 
-}
-); 
 
-//add transition ease
+//Icon Open Buttons
 
-//below are the data button opening specific texts
 window.addEventListener('click', function(event){
   if (event.target.closest('#data-button')) {
     popup.style.display = 'block'; 
