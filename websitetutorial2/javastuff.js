@@ -17,19 +17,19 @@ window.addEventListener('scroll', function() {
   
 
   // add transition opening
-window.addEventListener('click', function(event){
-  if (event.target.closest('#data-close')) {
-    popup.style.opacity = '0';
-    setTimeout(() => {
-      popup.style.display = 'none'; 
-  }, 300); //300 miliseconds
-  for(var i=0; i<texts.length; i++){
-    texts[i].style.opacity='0';
-    texts[i].style.display='none';
+  window.addEventListener('click', function(event){
+    if (event.target.closest('#data-close')) {
+      popup.style.opacity = '0';
+      setTimeout(() => {
+        popup.style.display = 'none'; 
+      }, 300); //300 miliseconds
+      for(var i=0; i<texts.length; i++){
+        texts[i].style.opacity='0';
+        texts[i].style.display='none';
+      }
+      popupcontent.style.backgroundImage='none';
+    } 
   }
-  popupcontent.style.backgroundImage='none';
-  } 
-}
 );
 
 
@@ -45,6 +45,7 @@ window.addEventListener('click', function(event){
     texts[i].style.opacity='0';
     texts[i].style.display='none';
   }
+  
   popupcontent.style.backgroundImage='none';
 
   } 
