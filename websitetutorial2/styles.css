@@ -6,9 +6,7 @@ body{
 }
 
 
-
 /* FIRST PAGE PICTURE */ 
-
 
 .my-picture{
     background-attachment: fixed;
@@ -49,37 +47,6 @@ body{
     transition: .3s;
 }
 
-
-/*hiding arrow button for now
-
-.overlay-text button{
-    position: absolute;
-    top: 300%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%; 
-    background-color: whitesmoke; 
-    border: none; 
-    color: black; 
-    font-size: 30px; 
-    display: flex;
-    align-items: center;            
-    justify-content: center; 
-    cursor: pointer; 
-    transition: background-color 0.5s;
-} 
-
-.overlay-text button:before {
-    content: "⇩"; 
-    font-size: 30px; 
-}
-
-.overlay-text button:hover {
-    background-color: rgb(206, 206, 206); 
-} */
-
 .overlay-text p, .overlay-text h1{
     margin: 0px;
     padding: 0px;
@@ -101,6 +68,7 @@ body{
   font-family: 'Lato', sans-serif;
   
 }
+
 
 /*About Me*/
 
@@ -130,7 +98,7 @@ body{
 }
 
 .About-me-Headers{
-    padding-top: 50px;
+    padding-top: 40px;
     display:block;
     color: white;
     text-align: center;
@@ -149,12 +117,6 @@ body{
     justify-content: center;
 
 }
-
-.technicals img{
-    width: 100px;
-    height: 100%;
-}
-
 
 .infolist {
     display: flex;
@@ -192,8 +154,7 @@ body{
 }
 
 .Skills{
-    padding: 50px 0;
-    display: block;
+    padding: 25px 0;
     width: 100%;
     background-color: rgb(35, 32, 32, 0.7);
     margin-top: 0px;
@@ -202,24 +163,38 @@ body{
     font-size: 15px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 0 auto;
+    margin-bottom: -15px;
 }
 
+.technicals img{
+    width: 100px;
+    height: 100%;
+    margin-top: -50px;
+    margin-left: -5px;
+}
+
+.technicals{
+    margin-top: -40px;
+    padding-bottom: 26px;
+}
+
+
+
+
 .about-icons{
-    
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    
 }
 
 .about-icons a{
     border-radius: 50%;
     margin: 30px;
+    margin-top: 20px;
 }
 
-/*find out how to make background of icons transparent*/
 .about-icons a img{
     display: inline-block;
     border-radius: 50%;
@@ -234,6 +209,7 @@ body{
     filter: invert(1);
     transform: scale(1.2);
 }
+
 
 /*Education*/
 
@@ -308,6 +284,8 @@ flex: 1;
 .school-name{
     font-size: 35px;
     font-style: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .school-degree-major{
@@ -325,12 +303,6 @@ flex: 1;
 }
 
     
-
-
-
-
-
-
 /*Experience*/
 
 .Experience{
@@ -387,7 +359,6 @@ ul li{
 
 /*Projects*/
 
-/* MAKE THE CONTENT ON THE PAGE ABSOLUTE NOT THE FUCKING BACKGROUND YOU DUMBASS DO IT LIKE YOUR HOME PAGE */
 .Projects h1{
     font-size: 30px;
     color: white;
@@ -549,37 +520,6 @@ border-radius: 10px;
     transition: .2s;
 }
 
-/*
-.image-blur{
-    position: absolute;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 1);
-    background-attachment: fixed;
-    background-image: url('myimages/Other/background-realistic-abstract-technology-particle_23-2148431735.avif');
-  width: 100%;
-  height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    filter: blur(3px);
-}
-    */
-
-/*
-.blurr {
-    position: absolute;
-    top: 0;
-    left: 0;
-   height: 500px;
-   width: 500px;
-    background-image: url('myimages/Other/background-realistic-abstract-technology-particle_23-2148431735.avif'); 
-    background-size: cover;
-    background-position: center;
-    filter: blur(8px); 
-    z-index: -1; 
-  } */
-
-
-
 
 /*Contact*/
 
@@ -633,8 +573,8 @@ border-radius: 10px;
 .contact-message{
     width: 500px;
     height: 300px;
-    padding-top: 10px; /* Adjust as needed */
-    box-sizing: border-box; /* Ensures padding is included in height */
+    padding-top: 10px; 
+    box-sizing: border-box; 
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: normal;
@@ -686,8 +626,8 @@ transition: .4s;
 }
 
 
-
 /*Footer*/
+
 footer{
     background-color: rgb(54, 49, 49);
     text-align: center;
@@ -696,19 +636,20 @@ footer{
     height: 25px;
 }
 
+
 /*Navigation Menu*/
+
 .Nav-menu{
 top: 0px;
-
 color: white;
 display: flex;
-justify-content: center; /*no longer works when position is fixed*/
-gap: 50px;
+justify-content: center; 
+gap: 20px;
 left: 50%;
 top: 25px;
 transform: translate(-50%, -50%);
 font-size: 10px;
-background-color: rgb(49, 48, 48, .3);
+background-color: rgb(49, 48, 48);
 width: 100%;
 position: fixed;
 z-index: 2;
@@ -721,19 +662,13 @@ html {
 .Nav-menu a{
     color:white;
     text-decoration: none;
-    
-   
 }
 
 
 .Nav-menu a:hover{
-    
     color: rgba(255, 255, 255, 0.705);
     transition: 0.3s;
 }
-
-
- /*color: rgba(255, 255, 255, 0.719);*/
 
  #linkedin{
     transform: scale(1.15); 
@@ -744,3 +679,74 @@ html {
     transform: scale(1.5);
     transition: .4s;
  }
+
+
+ /* OTHER */
+
+ #cplusplus{
+    transform: scale(0.7);
+    position: relative;
+    top: 30px;
+ }
+
+ #c{
+    transform: scale(0.7);
+    position: relative;
+    top: 30px;
+ }
+
+ #javascript{
+    transform: scale(0.9);
+    position: relative;
+    top: 10px;
+ }
+
+ #python{
+    transform: scale(1.3);
+    position: relative;
+    top: 15px;
+ }
+
+ #java{
+    transform: scale(0.5);
+    position: relative;
+    top: 60px;
+ }
+
+ #mips{
+    transform: scale(0.85);
+    position: relative;
+    top: 27px;
+ }
+
+ #scala{
+    transform: scale(0.6);
+    position: relative;
+    top: 25px;
+ }
+
+ #html{
+    transform: scale(0.7);
+    position: relative;
+    top: 20px;
+ }
+
+ #css{
+    transform: scale(0.52);
+    position: relative;
+    top: 41px;
+ }
+
+ #react{
+    transform: scale(0.57);
+    position: relative;
+    top: 35px;
+ }
+
+ #mysql{
+    transform: scale(1.3);
+    position: relative;
+    top: 25px;
+    padding-left: 10px;
+ }
+
