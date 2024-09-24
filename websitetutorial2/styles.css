@@ -495,19 +495,23 @@ border-radius: 10px;
 }
 
 .popup-text div p{
-    margin-top: 280px;
-    background-color: rgb(255, 255, 255, .95);
+    margin-top: 400px;
+    background-color: rgb(255, 255, 255);
+    border: 1px black solid;
     border-radius: 10px;
     font-size: 25px;
     width: 500px;
-    height: 250px;
+    height: 400px;
+    
 }
 
 .popup-text div a{
+    
     color: black;
     font-size: 25px;
     z-index: 1;
-    background-color: rgb(255, 255, 255, 0.95);
+    background-color: rgb(255, 255, 255);
+    border: 1px black solid;
     transition: .2s;
     border-radius: 10px;
     text-decoration: none;
@@ -518,6 +522,7 @@ border-radius: 10px;
 .popup-text div a:hover{
     color: rgb(33, 33, 255);
     transition: .2s;
+    
 }
 
 
