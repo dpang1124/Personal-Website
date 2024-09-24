@@ -365,7 +365,7 @@ ul li{
 }
 
 .Projects{
-    cursor: url(myimages/Other/galacticpointer.cur), auto;
+    cursor: url(cursors/galacticpointer.cur), auto;
     padding-top: 50px;
     text-align: center;
     background-color: transparent;
@@ -377,7 +377,7 @@ ul li{
 }
 
 .Projects * {
-    cursor: url(myimages/Other/galacticpointer.cur), auto;
+    cursor: url(cursors/galacticpointer.cur), auto;
 }
 
 .icon-span{
