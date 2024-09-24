@@ -15,7 +15,7 @@ body{
     border:none;
     overflow: hidden;
     position: relative;
-    background-image: url(myimages/Other/extendedresumepic.jpg);
+    background-image: url(Other/extendedresumepic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -370,7 +370,7 @@ ul li{
     text-align: center;
     background-color: transparent;
     height: fit-content;
-    background-image: url(myimages/Other/blurred-technology.jpg);
+    background-image: url(Other/blurred-technology.jpg);
     background-attachment: fixed;
     background-color: white;
     padding-bottom: 81px;
