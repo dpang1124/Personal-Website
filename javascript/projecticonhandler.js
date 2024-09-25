@@ -65,7 +65,7 @@ popup.style.display = 'block';
   popup.style.opacity = '1';
   texts[0].style.opacity='1';
   texts[0].style.display='block';
-  popupcontent.style.backgroundImage = "url('Projects/Data.png')";
+  popupcontent.style.backgroundImage = "url('../icons/Projects/Data.png')";
 popupcontent.style.backgroundSize = 'cover';  
 popupcontent.style.backgroundPosition = 'center'; 
 
@@ -83,7 +83,7 @@ popup.style.display = 'block';
   popup.style.opacity = '1';
   texts[1].style.opacity='1';
   texts[1].style.display='block';
-  popupcontent.style.backgroundImage = "url('Projects/Enemy.png')";
+  popupcontent.style.backgroundImage = "url('../icons/Projects/Enemy.png')";
 popupcontent.style.backgroundSize = 'cover';  
 popupcontent.style.backgroundPosition = 'center'; 
 
@@ -101,7 +101,7 @@ popup.style.display = 'block';
   popup.style.opacity = '1';
   texts[2].style.opacity='1';
   texts[2].style.display='block';
-  popupcontent.style.backgroundImage = "url('Projects/Instant.png')";
+  popupcontent.style.backgroundImage = "url('../icons/Projects/Instant.png')";
 popupcontent.style.backgroundSize = 'cover';  
 popupcontent.style.backgroundPosition = 'center'; 
 
@@ -119,7 +119,7 @@ popup.style.display = 'block';
   popup.style.opacity = '1';
   texts[3].style.opacity='1';
   texts[3].style.display='block';
-  popupcontent.style.backgroundImage = "url('Projects/Conway.png')";
+  popupcontent.style.backgroundImage = "url('../icons/Projects/Conway.png')";
 popupcontent.style.backgroundSize = 'cover';  
 popupcontent.style.backgroundPosition = 'center'; 
 
@@ -137,7 +137,7 @@ popup.style.display = 'block';
   popup.style.opacity = '1';
   texts[4].style.opacity='1';
   texts[4].style.display='block';
-  popupcontent.style.backgroundImage = "url('Projects/Short.png')";
+  popupcontent.style.backgroundImage = "url('../icons/Projects/Short.png')";
 popupcontent.style.backgroundSize = 'cover';  
 popupcontent.style.backgroundPosition = 'center'; 
 
@@ -155,7 +155,7 @@ popup.style.display = 'block';
   popup.style.opacity = '1';
   texts[5].style.opacity='1';
   texts[5].style.display='block';
-  popupcontent.style.backgroundImage = "url('Projects/Personal.png')";
+  popupcontent.style.backgroundImage = "url('../icons/Projects/Personal.png')";
 popupcontent.style.backgroundSize = 'cover';  
 popupcontent.style.backgroundPosition = 'center'; 
 
@@ -173,7 +173,7 @@ popup.style.display = 'block';
   popup.style.opacity = '1';
   texts[6].style.opacity='1';
   texts[6].style.display='block';
-  popupcontent.style.backgroundImage = "url('Projects/Queen.png')";
+  popupcontent.style.backgroundImage = "url('../icons/Projects/Queen.png')";
 popupcontent.style.backgroundSize = 'cover';  
 popupcontent.style.backgroundPosition = 'center'; 
 
@@ -191,7 +191,7 @@ popup.style.display = 'block';
   popup.style.opacity = '1';
   texts[7].style.opacity= '1';
   texts[7].style.display='block';
-  popupcontent.style.backgroundImage = "url('Projects/Self.png')";
+  popupcontent.style.backgroundImage = "url('../icons/Projects/Self.png')";
 popupcontent.style.backgroundSize = 'cover';  
 popupcontent.style.backgroundPosition = 'center'; 
 
