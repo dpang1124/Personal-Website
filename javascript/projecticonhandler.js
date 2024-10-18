@@ -7,6 +7,12 @@ let texts =
 [document.getElementById('data'), document.getElementById('enemy'), document.getElementById('instant'), document.getElementById('conway'),
 document.getElementById('short'), document.getElementById('personal'), document.getElementById('queen'), document.getElementById('self')];
 
+let textbox = 
+[document.getElementById('data-text'), document.getElementById('enemy-text'), document.getElementById('instant-text'), document.getElementById('conway-text'), 
+ document.getElementById('short-text'), document.getElementById('personal-text'), document.getElementById('queen-text'), document.getElementById('self-text')];
+
+
+
 
 window.addEventListener('click', function(event){
 
@@ -60,7 +66,7 @@ if (event.target.closest('#data-button')) {
 for(var i=0; i<moredetails.length; i++){
   moredetails[i].style.display = 'none';
 }
-moredetails[0].style.display = 'block';
+moredetails[0].style.display = 'inline-block';
 popup.style.display = 'block'; 
   popup.style.opacity = '1';
   texts[0].style.opacity='1';
@@ -78,7 +84,7 @@ if (event.target.closest('#data-button2')) {
 for(var i=0; i<moredetails.length; i++){
   moredetails[i].style.display = 'none';
 }
-moredetails[1].style.display = 'block';
+moredetails[1].style.display = 'inline-block';
 popup.style.display = 'block'; 
   popup.style.opacity = '1';
   texts[1].style.opacity='1';
@@ -96,7 +102,7 @@ if (event.target.closest('#data-button3')) {
 for(var i=0; i<moredetails.length; i++){
   moredetails[i].style.display = 'none';
 }
-moredetails[2].style.display = 'block';
+moredetails[2].style.display = 'inline-block';
 popup.style.display = 'block'; 
   popup.style.opacity = '1';
   texts[2].style.opacity='1';
@@ -114,7 +120,7 @@ if (event.target.closest('#data-button4')) {
 for(var i=0; i<moredetails.length; i++){
   moredetails[i].style.display = 'none';
 }
-moredetails[3].style.display = 'block';
+moredetails[3].style.display = 'inline-block';
 popup.style.display = 'block'; 
   popup.style.opacity = '1';
   texts[3].style.opacity='1';
@@ -132,7 +138,7 @@ if (event.target.closest('#data-button5')) {
 for(var i=0; i<moredetails.length; i++){
   moredetails[i].style.display = 'none';
 }
-moredetails[4].style.display = 'block';
+moredetails[4].style.display = 'inline-block';
 popup.style.display = 'block'; 
   popup.style.opacity = '1';
   texts[4].style.opacity='1';
@@ -150,7 +156,7 @@ if (event.target.closest('#data-button6')) {
 for(var i=0; i<moredetails.length; i++){
   moredetails[i].style.display = 'none';
 }
-moredetails[5].style.display = 'block';
+moredetails[5].style.display = 'inline-block';
 popup.style.display = 'block'; 
   popup.style.opacity = '1';
   texts[5].style.opacity='1';
@@ -168,7 +174,7 @@ if (event.target.closest('#data-button7')) {
 for(var i=0; i<moredetails.length; i++){
   moredetails[i].style.display = 'none';
 }
-moredetails[6].style.display = 'block';
+moredetails[6].style.display = 'inline-block';
 popup.style.display = 'block'; 
   popup.style.opacity = '1';
   texts[6].style.opacity='1';
@@ -186,7 +192,7 @@ if (event.target.closest('#data-button8')) {
 for(var i=0; i<moredetails.length; i++){
   moredetails[i].style.display = 'none';
 }
-moredetails[7].style.display = 'block';
+moredetails[7].style.display = 'inline-block';
 popup.style.display = 'block'; 
   popup.style.opacity = '1';
   texts[7].style.opacity= '1';

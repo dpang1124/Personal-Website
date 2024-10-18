@@ -34,7 +34,7 @@ function totaldistance(item){
       }
   
       else if(scrollPosition >= (offsets[0] + heights[0]) && scrollPosition < (offsets[1] + heights[1] + 100)){
-        for(var i=0; i<5; i++){
+        for(var i=0; i<6; i++){
           pages[i].style.color = 'gray';
         }
         navmenu.style.opacity = '1';
