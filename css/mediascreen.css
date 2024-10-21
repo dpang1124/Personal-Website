@@ -1,4 +1,28 @@
-@media screen {
+/*mobile devices*/
+@media screen and (max-width: 500px), screen and (max-height: 850px) {
+    /* Your styles here */
+
+    div{
+        padding: 0px;
+        margin: 0px;
+    }
     
+    .my-picture{
+        width: fit-content;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .overlay-text{
+        position:relative;
+        top: 700px;
+        left: 0px;
+    }
+
+    .Projects{
+        background-size: contain;
+        width: 100vw;
+    }
 }
 
+/*tablets*/

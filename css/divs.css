@@ -3,6 +3,7 @@ body{
     background-color: rgb(39, 35, 35);
     margin: auto;
     padding: auto;
+    overflow-x: hidden;
 }
 
 
@@ -10,9 +11,8 @@ body{
 
 .my-picture{
     background-attachment: fixed;
-    text-align: center;
     background-color: brown;
-    border:none;
+    border: none;
     overflow: hidden;
     position: relative;
     background-image: url(../images/Other/extendedresumepic.jpg);
@@ -20,7 +20,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    width: 100%;
+    width: auto;
+    
 }
 
 .overlay-text h1{
@@ -53,7 +54,7 @@ body{
 }
 
 .overlay-text{
-  position: absolute;
+  position: relative;
   top: 45%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
@@ -188,6 +189,7 @@ body{
     font-family:Georgia, 'Times New Roman', Times, serif;
     height: fit-content;
     padding-bottom: 50px;
+    width: 100%;
 }
 
 .education-format{
