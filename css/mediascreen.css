@@ -1,22 +1,42 @@
 /*mobile devices*/
-@media screen and (max-width: 500px), screen and (max-height: 850px) {
+@media screen and (max-width: 500px), screen and (max-height: 900px) {
     /* Your styles here */
 
     div{
         padding: 0px;
         margin: 0px;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .AboutMe{
+        height: 1000px;
+        background-color: rgb(82, 58, 58);
+        width: 550px;
+    }
+
+    .Experience{
+        /*nothing*/
     }
     
+    .flex-all{
+        flex-direction: column;
+    }
     .my-picture{
-        width: fit-content;
-        background-size: contain;
-        background-position: center;
+       
+    }
+
+    .education-format{
+        transform: scale(0.65);
+        position: relative;
+        left: -120px;
     }
 
     .overlay-text{
         position:relative;
         top: 700px;
-        left: 0px;
+        left: -200px;
     }
 
     .Projects{
