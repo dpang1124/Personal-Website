@@ -10,10 +10,24 @@
 
 
     .AboutMe{
-        height: 1000px;
+        height: fit-content;
         background-color: rgb(82, 58, 58);
         width: 100%;
         position: relative;
+    }
+
+    .flex-all{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%, 10%);
+    }
+
+    .Description{
+        width: 100%;
     }
 
     .Experience{
@@ -31,8 +45,12 @@
 
     .my-picture{
        width: 100%;
+       background-position: 30% center;
     }
 
+    .infolist{
+        margin-bottom: -60px;
+    }
     .education-format{
        
         position: relative;
@@ -59,16 +77,35 @@
         background-repeat: no-repeat;
     }
    
+    .Skills{
+        height: fit-content;
+        width: 100%;
+
+    }
+
+    .Skills h1{
+        margin-bottom: 10%;
+    }
+
+    .Skills p{
+        width: 90%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .technicals{
+        margin-top: 10%;
+        width: 100%;
+
+    }
 
     .overlay-text{
         position: relative;
-        /*
-        top: 700px;
-        left: -320px;
-        */
         left: 50%;
         top: 50%;
-        transform: translate(-75%, 70%);
+        transform: translate(-74%, 70%);
         font-size: 25px;
     }
 
@@ -77,9 +114,6 @@
         left: 50%;
         transform: translateX(-50%) scale(0.6);
         margin-top: -15%;
-        
-  
-
     }
 
     .Contact h1{
