@@ -42,7 +42,7 @@
        width: 100%;
        
        background-position: 30% bottom;
-       background-size: cover;
+       background-size: contain;
        top: 0px;
        
     }

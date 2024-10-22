@@ -12,7 +12,7 @@ body{
 
 .my-picture{
     background-attachment: fixed;
-    background-color: brown;
+    
     border: none;
     overflow: hidden;
     position: relative;
@@ -21,8 +21,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    
-    
 }
 
 .overlay-text h1{
