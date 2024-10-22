@@ -1,11 +1,10 @@
 /*mobile devices*/
-@media screen and (max-width: 500px), screen and (max-height: 900px) {
+@media screen and (max-width: 450px), screen and (max-height: 800px) {
     /* Your styles here */
 
     div{
         padding: 0px;
         margin: 0px;
-        position: relative;
         overflow: hidden;
     }
 
@@ -13,35 +12,98 @@
     .AboutMe{
         height: 1000px;
         background-color: rgb(82, 58, 58);
-        width: 550px;
+        width: 100%;
+        position: relative;
     }
 
     .Experience{
         /*nothing*/
     }
+
+    .Jobs{
+        width: 80%;
+        height: fit-content;
+    }
     
-    .flex-all{
+    .flex-row{
         flex-direction: column;
     }
+
     .my-picture{
-       
+       width: 100%;
     }
 
     .education-format{
-        transform: scale(0.65);
+       
         position: relative;
-        left: -120px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -15%) scale(0.4);
+        margin-bottom: -90%;
+        margin-top: -20%;
     }
 
+    .icons a img{
+        transform: scale(0.8);
+    }
+
+    .icons{
+        gap: 0px;
+    }
+
+    .icons a{
+        margin: 0px;
+    }
+
+    .projects{
+        background-repeat: no-repeat;
+    }
+   
+
     .overlay-text{
-        position:relative;
+        position: relative;
+        /*
         top: 700px;
-        left: -200px;
+        left: -320px;
+        */
+        left: 50%;
+        top: 50%;
+        transform: translate(-75%, 70%);
+        font-size: 25px;
+    }
+
+    .contact-flexbox{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) scale(0.6);
+        margin-top: -15%;
+        
+  
+
+    }
+
+    .Contact h1{
+        font-size: 1.5rem;
+        
+    }
+
+    .contact-flexbox{
+        
+    }
+
+    .Education{
+        padding-bottom: 30%;
+    }
+
+
+
+    .overlay-text h1{
+        font-size: 60px;
     }
 
     .Projects{
         background-size: contain;
-        width: 100vw;
+        width: 100%;
     }
 }
 
