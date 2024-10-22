@@ -25,6 +25,11 @@ function totaldistance(item){
   
    window.addEventListener('scroll', function(){
     const scrollPosition = window.pageYOffset;
+
+    const width = window.innerWidth; 
+    const height = window.innerHeight; 
+
+    if(width >= 450 && height >= 800){
    
       if(scrollPosition >= offsets[0] && scrollPosition < (offsets[0] + heights[0])){
         navmenu.style.opacity = '0';
@@ -83,7 +88,9 @@ function totaldistance(item){
         navmenu.style.display = 'flex';
         pages[5].style.color = 'white';
       }
+    }
    });
+  
   
   //when DOM loads hide navmenu by default
   
