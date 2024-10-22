@@ -4,7 +4,6 @@
 
     .AboutMe{
         height: fit-content;
-        background-color: rgb(226, 124, 124);
         width: 100%;
         position: relative;
         top: 0%;
@@ -41,8 +40,11 @@
 
     .my-picture{
        width: 100%;
-       background-position: 30% center;
+       
+       background-position: 30% bottom;
+       background-size: cover;
        top: 0px;
+       
     }
 
     .infolist{
@@ -52,13 +54,12 @@
     }
 
     .education-format{
-
         position: relative;
         left: 50%;
         top: 0px;
         transform: translate(-50%, -20%) scale(0.4);
         margin-bottom: -80%;
-       
+
     }
 
     .icons a img{
