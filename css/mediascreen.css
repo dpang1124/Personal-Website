@@ -22,6 +22,11 @@
 
     .Description{
         width: 100%;
+        padding-bottom: 10%;
+    }
+
+    .resume{
+        margin-bottom: 10%;
     }
 
     .Jobs{
@@ -30,16 +35,18 @@
     }
     
     .flex-row{
+        top: 0px;
         flex-direction: column;
     }
 
     .my-picture{
        width: 100%;
        background-position: 30% center;
+       top: 0px;
     }
 
     .infolist{
-        margin-bottom: -10%;
+        margin-bottom: -30%;
         position: relative;
         top: 0px;
     }
@@ -48,7 +55,7 @@
 
         position: relative;
         left: 50%;
-        top: 50%;
+        top: 0px;
         transform: translate(-50%, -20%) scale(0.4);
         margin-bottom: -80%;
        
@@ -71,6 +78,7 @@
     }
    
     .Skills{
+        top: 0px;
         height: fit-content;
         width: 100%;
 
@@ -83,7 +91,7 @@
     .Skills p{
         width: 90%;
         position: relative;
-        top: 50%;
+        top: 0px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -114,6 +122,7 @@
     }
 
     .Education{
+        top: 0px;
         padding-bottom: 30%;
     }
 
