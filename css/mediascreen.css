@@ -1,19 +1,10 @@
 /*mobile devices*/
 @media screen and (max-width: 450px), screen and (max-height: 800px) {
 
-    body{
-        overflow-x: hidden;
-    }
-
-    div{
-        padding: 0px;
-        margin: 0px;
-    }
-
 
     .AboutMe{
         height: fit-content;
-        background-color: rgb(119, 112, 112);
+        background-color: rgb(226, 124, 124);
         width: 100%;
         position: relative;
         top: 0%;
