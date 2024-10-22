@@ -16,6 +16,7 @@
         background-color: rgb(119, 112, 112);
         width: 100%;
         position: relative;
+        top: 0%;
     }
 
     .flex-all{
@@ -23,7 +24,7 @@
         margin: 0px;
         width: 100%;
         position: relative;
-        top: 50%;
+        top: 0px;
         left: 50%;
         transform: translate(-60%, 10%);
     }
@@ -48,8 +49,8 @@
 
     .infolist{
         margin-bottom: -10%;
-        margin-top: 0%;
-        padding-top: 0%;
+        position: relative;
+        top: 0px;
     }
 
     .education-format{
@@ -99,7 +100,6 @@
     .technicals{
         margin-top: 10%;
         width: 100%;
-
     }
 
     .overlay-text{
