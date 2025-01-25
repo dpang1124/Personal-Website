@@ -1,5 +1,5 @@
 /*mobile devices*/
-@media screen and (max-width: 450px), screen and (max-height: 800px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
 
 
     .AboutMe{
@@ -120,6 +120,7 @@
         
     }
 
+
     .Education{
         top: 0px;
         padding-bottom: 30%;
@@ -138,3 +139,98 @@
 }
 
 /*tablets*/
+@media screen and (min-width: 501px) and (max-width: 1400px) {
+    .AboutMe{
+        height: fit-content;
+        width: 100%;
+        position: relative;
+        top: 0%;
+    }
+
+
+    .resume{
+        margin-bottom: 10%;
+    }
+
+    .Jobs{
+        width: 80%;
+        height: fit-content;
+    }
+    
+  
+
+
+    .infolist{
+        margin-bottom: -30%;
+        position: relative;
+        top: 0px;
+    }
+
+
+
+    .icons a img{
+        transform: scale(0.8);
+    }
+
+    .icons{
+        gap: 0px;
+    }
+
+    .icons a{
+        margin: 0px;
+    }
+
+    .projects{
+        background-repeat: no-repeat;
+    }
+   
+    .Skills{
+        top: 0px;
+        height: fit-content;
+        width: 100%;
+
+    }
+
+    .Skills h1{
+        margin-bottom: 10%;
+    }
+
+    .Skills p{
+        width: 90%;
+        position: relative;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .technicals{
+    
+        width: 100%;
+    }
+
+    .overlay-text{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-74%, 70%);
+        font-size: 25px;
+    }
+
+
+
+    .Education{
+        top: 0px;
+        padding-bottom: 30%;
+    }
+
+
+
+    .overlay-text h1{
+        font-size: 60px;
+    }
+
+    .Projects{
+        background-size: contain;
+        width: 100%;
+    }
+}
